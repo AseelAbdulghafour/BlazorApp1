@@ -14,7 +14,7 @@ namespace BlazorApp1
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
             builder.Services.AddDbContextFactory<TodoDbContext>(options =>
-            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnevtion")));
+            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
             var app = builder.Build();  
                 
 
